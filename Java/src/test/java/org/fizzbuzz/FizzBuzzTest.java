@@ -51,6 +51,9 @@ class FizzBuzzTest {
 
         final var separateCountersFizzBuzz = new SeparateCountersFizzBuzz();
         assertThat(separateCountersFizzBuzz.map(number)).isEqualTo(expected);
+
+        final var countdownFizzBuzz = new CountdownFizzBuzz();
+        assertThat(countdownFizzBuzz.map(number)).isEqualTo(expected);
     }
 
     @ParameterizedTest
@@ -67,5 +70,9 @@ class FizzBuzzTest {
         final var separateCountersFizzBuzz = new SeparateCountersFizzBuzz();
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> separateCountersFizzBuzz.map(number));
+
+        final var countdownFizzBuzz = new CountdownFizzBuzz();
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> countdownFizzBuzz.map(number));
     }
 }

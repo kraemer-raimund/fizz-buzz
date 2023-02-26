@@ -81,6 +81,10 @@ class FizzBuzzTest {
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> countdownFizzBuzz.map(number));
 
+        final var lookupTableFizzBuzz = new LookupTableFizzBuzz();
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> lookupTableFizzBuzz.map(number));
+
         final var lookupTableNoModuloFizzBuzz = new LookupTableNoModuloFizzBuzz();
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> lookupTableNoModuloFizzBuzz.map(number));

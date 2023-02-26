@@ -45,6 +45,9 @@ class FizzBuzzTest {
     void shouldMapPositiveNumbersToCorrectString(int number, String expected) {
         final var trivialFizzBuzz = new TrivialFizzBuzz();
         assertThat(trivialFizzBuzz.map(number)).isEqualTo(expected);
+
+        final var noModuloFizzBuzz = new NoModuloFizzBuzz();
+        assertThat(noModuloFizzBuzz.map(number)).isEqualTo(expected);
     }
 
     @ParameterizedTest
@@ -53,5 +56,9 @@ class FizzBuzzTest {
         final var trivialFizzBuzz = new TrivialFizzBuzz();
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> trivialFizzBuzz.map(number));
+
+        final var noModuloFizzBuzz = new NoModuloFizzBuzz();
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> noModuloFizzBuzz.map(number));
     }
 }

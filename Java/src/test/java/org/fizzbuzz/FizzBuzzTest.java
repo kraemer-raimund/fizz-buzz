@@ -54,6 +54,9 @@ class FizzBuzzTest {
 
         final var countdownFizzBuzz = new CountdownFizzBuzz();
         assertThat(countdownFizzBuzz.map(number)).isEqualTo(expected);
+
+        final var lookupTableFizzBuzz = new LookupTableFizzBuzz();
+        assertThat(lookupTableFizzBuzz.map(number)).isEqualTo(expected);
     }
 
     @ParameterizedTest
@@ -74,5 +77,9 @@ class FizzBuzzTest {
         final var countdownFizzBuzz = new CountdownFizzBuzz();
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> countdownFizzBuzz.map(number));
+
+        final var lookupTableFizzBuzz = new LookupTableFizzBuzz();
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> lookupTableFizzBuzz.map(number));
     }
 }

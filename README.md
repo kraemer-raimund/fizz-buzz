@@ -6,7 +6,7 @@ The popular puzzle/game FizzBuzz in different variants.
 
 Fizz Buzz is a game played by young children to practice math, particularly division. The players take turns counting up, but when the number is divisible by 3, they say "Fizz" instead of the number, and if it is divisible by 5 they say "Buzz". If it is divisible by both 3 and 5, they say "FizzBuzz" instead.
 
-A typical sequence would look like this: "1, 2, Fizz, 4, Buzz,  Fizz, 7, 8, ..., 14, FizzBuzz, 16, 17, Fizz, ..."
+A typical sequence would look like this: "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, ..., 14, FizzBuzz, 16, 17, Fizz, ..."
 
 ## FizzBuzz as a coding test
 

@@ -48,6 +48,9 @@ class FizzBuzzTest {
 
         final var noModuloFizzBuzz = new NoModuloFizzBuzz();
         assertThat(noModuloFizzBuzz.map(number)).isEqualTo(expected);
+
+        final var separateCountersFizzBuzz = new SeparateCountersFizzBuzz();
+        assertThat(separateCountersFizzBuzz.map(number)).isEqualTo(expected);
     }
 
     @ParameterizedTest
@@ -60,5 +63,9 @@ class FizzBuzzTest {
         final var noModuloFizzBuzz = new NoModuloFizzBuzz();
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> noModuloFizzBuzz.map(number));
+
+        final var separateCountersFizzBuzz = new SeparateCountersFizzBuzz();
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> separateCountersFizzBuzz.map(number));
     }
 }

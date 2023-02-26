@@ -2,9 +2,6 @@ package org.fizzbuzz;
 
 public class CountdownFizzBuzz {
 
-    public CountdownFizzBuzz() {
-    }
-
     public String map(int number) {
         if (number < 1) {
             throw new IllegalArgumentException("Number is non-positive, but a positive number is expected.");

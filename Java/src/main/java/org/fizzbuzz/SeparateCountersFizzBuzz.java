@@ -2,9 +2,6 @@ package org.fizzbuzz;
 
 public class SeparateCountersFizzBuzz {
 
-    public SeparateCountersFizzBuzz() {
-    }
-
     public String map(int number) {
         if (number < 1) {
             throw new IllegalArgumentException("Number is non-positive, but a positive number is expected.");

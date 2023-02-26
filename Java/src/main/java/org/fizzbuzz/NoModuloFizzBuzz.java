@@ -2,9 +2,6 @@ package org.fizzbuzz;
 
 public class NoModuloFizzBuzz {
 
-    public NoModuloFizzBuzz() {
-    }
-
     public String map(int number) {
         if (number < 1) {
             throw new IllegalArgumentException("Number is non-positive, but a positive number is expected.");
